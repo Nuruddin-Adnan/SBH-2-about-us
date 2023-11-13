@@ -1,0 +1,27 @@
+.about-us {
+    background-color: #f5f5f5;
+
+    .text-dark {
+        color: #1A314D;
+    }
+
+    .heading-1 {
+        font-size: 36px;
+    }
+
+    .features-card {
+        border: 1px solid #CED3D9;
+        border-radius: 16px;
+        padding: 30px 20px;
+        background-color: #fff;
+        text-align: center;
+
+        &.bg-blue {
+            background-color: #002377;
+        }
+
+        .icon {
+            margin-top: -75px;
+        }
+    }
+}
