@@ -1,24 +1,18 @@
 /*=== abstracts css start ===*/
-@use 'abstracts/fonts';
+@use "abstracts/fonts";
 /*=== End of abstracts css ===*/
 
-
 /*=== base css start ===*/
-@use 'base/global';
-@use 'base/typography';
-@use 'base/utility';
+@use "base/global";
+@use "base/typography";
+@use "base/utility";
 /*=== End of base css ===*/
 
 /*=== layouts css start ===*/
-@use 'layouts/header';
-@use 'layouts/footer';
+@use "layouts/header";
+@use "layouts/footer";
 /*=== End of layouts css ===*/
 
-
 /*=== pages css start ===*/
-@use 'pages/mwb';
-@use 'pages/contributors';
-@use 'pages/allNews';
-@use 'pages/newsArticle';
-@use 'pages/aboutUs';
+@use "pages/aboutUs";
 /*=== End of pages css ===*/
