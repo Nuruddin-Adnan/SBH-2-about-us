@@ -17,3 +17,15 @@ const navTab = new Swiper(".navTabSwiper", {
         prevEl: ".nav-tab-prev",
     },
 });
+
+
+// Banner slider
+const bannerSwiper = new Swiper(".bannerSwiper", {
+    autoplay: {
+        delay: 3500,
+    },
+    speed: 600,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});

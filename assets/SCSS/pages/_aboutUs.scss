@@ -151,4 +151,16 @@
             }
         }
     }
+
+    .bannerSwiper {
+        .swiper-pagination-bullet {
+          background-color: transparent;
+          border: 1px solid #0062e1;
+          opacity: 1;
+  
+          &.swiper-pagination-bullet-active {
+            background-color: #0062e1;
+          }
+        }
+      }
 }

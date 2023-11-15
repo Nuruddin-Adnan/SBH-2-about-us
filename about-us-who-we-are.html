@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SBH 2 About us | Who we are</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/logo-shield.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -26,7 +28,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/images/header/blue-shield-icon-png--8UlbuW.png" alt="shield" class="img-fluid shield" style="width: 25px;"></a>
+                        <a class="nav-link" href="#"><img src="assets/images/logo/logo-shield.svg" alt="shield" class="img-fluid shield" style="width: 25px;"></a>
                     </li>
                     <li class="nav-item d-lg-block d-none">
                         <a class="nav-link" href="#">Share Point</a>
@@ -438,7 +440,7 @@
                 <div class="container">
                     <ul class="navbar-nav align-items-center overflow-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">
+                            <a class="nav-link" href="index.html">
                                 About us
                             </a>
                         </li>
@@ -657,9 +659,33 @@
                             <img src="assets/images/about-us/icon/icon-scroll.svg" alt="icon" class="img-fluid">
                             <span class="fs-14px ps-2" style="color: #4F637C;">Click on our values to read more </span>
                         </div>
-                        <div class="text-center">
-                            <img src="assets/images/about-us/Value.png" alt="value" class="img-fluid me-xl-5">
-                            <img src="assets/images/about-us/SB-logo-shield.png" alt="logo" class="img-fluid d-xl-inline d-none">
+                        <div class="d-xl-flex align-items-center justify-content-center mt-xl-0 mt-4">
+                            <div class="flex-shrink-0  text-center">
+                                <img src="assets/images/about-us/Value.png" alt="value" usemap="#image-map" class="img-fluid me-xl-5" data-aos="zoom-in">
+                                <map name="image-map">
+                                    <area alt="Upholding the highest levels of integrity" title="Upholding the highest levels of integrity" href="#" coords="138,140,68" shape="circle">
+                                    <area alt="Serving our clients" title="Serving our clients" href="#" coords="310,70,68" shape="circle">
+                                    <area alt="Growing our people" title="Growing our people" href="#" coords="483,141,68" shape="circle">
+                                    <area alt="Respecting each other" title="Respecting each other" href="#" coords="71,310,70" shape="circle">
+                                    <area alt="Constantly raising the bar" title="Constantly raising the bar" href="#" coords="139,479,68" shape="circle">
+                                    <area alt="Teamwork" title="Teamwork" href="#" coords="309,553,68" shape="circle">
+                                    <area alt="Being proactive" title="Being proactive" href="#" coords="480,480,69" shape="circle">
+                                    <area alt="Delivering to our stakeholders" title="Delivering to our stakeholders" href="#" coords="551,310,68" shape="circle">
+                                </map>
+                            </div>
+                            <div class="flex-grow-1 position-relative text-center d-xl-block d-none">
+                                <img src="assets/images/about-us/shields-outline-lg.png" alt="logo" class="img-fluid d-xl-inline d-none">
+                                <div class="text-content position-absolute top-50 start-50 translate-middle text-start">
+                                    <div class="d-flex align-items-center mb-4">
+                                        <div class="flex-shrink-0 me-2">
+                                            <img src="assets/images/about-us/icon/service-icon.svg" alt="icon" class="img-fluid">
+                                        </div>
+                                        <p class="flex-grow-1 font-medium text-dark mb-0">Serving our clients</p>
+                                    </div>
+                                    <p class="fs-14px text-dark">We do everything in our power to ensure that we provide our clients with the products,
+                                        services and solutions to suit their needs, provided that everything we do for them is based on sound business principles.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -730,13 +756,28 @@
     <!-- #####// End of footer ##### -->
 
 
+    <script src="assets/vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/vendor/bootstrap/javascript/popper.min.js"></script>
     <script src="assets/vendor/bootstrap/javascript/bootstrap.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- image map responsive jquery pluging -->
+    <script src="assets/vendor/rwdImageMaps/jquery.rwdImageMaps.min.js"></script>
+
     <script src="assets/javascript/script.js"></script>
+
+    <script>
+        AOS.init();
+
+        $(document).ready(function (e) {
+            $("img[usemap]").rwdImageMaps()
+        })
+    </script>
 </body>
 
 </html>

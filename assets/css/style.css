@@ -796,5 +796,13 @@ body {
 .about-us .tab-section .nav-tabs .nav-tab-prev.swiper-button-disabled span {
   color: transparent;
 }
+.about-us .bannerSwiper .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid #0062e1;
+  opacity: 1;
+}
+.about-us .bannerSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #0062e1;
+}
 
 /*=== End of pages css ===*//*# sourceMappingURL=style.css.map */
